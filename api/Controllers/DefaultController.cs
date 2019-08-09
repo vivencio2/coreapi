@@ -18,7 +18,7 @@ namespace api.Controllers
     public class DefaultController : ControllerBase
     {
         [AllowAnonymous]
-        [HttpPost]
+        [HttpGet]
         public IActionResult RequestToken(string username, string password)
         {
             if (username == "assessment" && password == "p4s$M3P15")
